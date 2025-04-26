@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Orden</title>
+    <link rel="stylesheet" href="crearOrden.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body id="body">
+    <br />
+    <br />
+    <h1 class="text-center text-white" id="titulo">Orden</h1>
+    <a href="../todasLasOrdenes/ordenes.html" class="btn btn-light" style="margin-left: 5%;">Atras</a>
+    <br>
+    <hr style="color: white;">
+    <br />
+    
+    <div id="allProd" class="container">
+        <center>
+            <h2 class="text-center text-white">Crear una nueva Orden</h2>
+            <br>
+            <form action="javascript:void(0);" method="POST" onsubmit="addOrden()" class="text-center ">
+                <label for="add-descripcion" class="text-center text-white">Descripcion: </label>
+                    <textarea type="text" class="form-control" id="add-descripcion" placeholder="Descripcion de la orden"></textarea>
+                <br>
+                <label for="add-selectEstado" class="text-center text-white">Estado:</label>
+                <select id="add-selectEstado" class="form-control">
+                    <option value="" selected></option>
+                    <option value="Facturación">Facturación</option>
+                    <option value="Preparación">Preparación</option>
+                    <option value="En envío">En envío</option>
+                    <option value="Entregado">Entregado</option>
+                    <option value="Cancelación">Cancelación</option>
+                </select>
+                <br>
+                <label for="add-total" class="text-center text-white">Total: </label>
+                    <input type="text" class="form-control" id="add-total" placeholder="Total de la orden">
+                <br>
+
+                <label for="add-cliente" class="text-center text-white">Cliente: </label>
+                    <select id="add-cliente" class="form-control">
+                    </select>
+                    
+                <br>
+                        <input type="submit" class="btn btn-success" value="Agregar">
+            </form>
+        </center>
+    </div>
+    <br>
+    
+    <br>
+    <script src="crearOrden.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.capa {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+/*Estilos para el encabezado*/
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px;
+}
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.logo h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.container .menu {
+  float: right;
+  line-height: 100px;
+}
+.container .menu a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.container .menu a:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #1c1c1c;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+.cont-menu nav {
+  transform: translateY(15%);
+}
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f;
+}
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+#bienvenida{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 10px #ffffff;
+    align-content: center;
+    height: 100vh;
+    justify-items: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    h1 {
+        transition-duration: 0.5s;
+    }
+}
+h1:hover{
+    cursor: default;
+    text-shadow: 0px 0px 20px aqua;
+    transform: scale(1.3);
+    transition-duration: 0.5s;
+}

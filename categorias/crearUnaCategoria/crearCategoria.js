@@ -1,4 +1,4 @@
-fetch(`https://localhost:7149/Categorias`)
+fetch(`https://crearapicamilo.somee.com/Categorias`)
             .then(response => response.json())
             .then(json => {
                 json.map(function (elemento, i, elem) {
@@ -22,7 +22,7 @@ function addCateg() {
     nombre: addNombreText
   };
 
-  fetch(`https://localhost:7149/Categorias`, {
+  fetch(`https://crearapicamilo.somee.com/Categorias`, {
     method: 'POST',
     headers: {
       'Accept': 'application/json',

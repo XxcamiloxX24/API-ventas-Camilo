@@ -39,7 +39,7 @@ $(document).ready(function () {
 });
 
 function getItems() {
-    fetch("https://localhost:7149/Categorias")
+    fetch("https://crearapicamilo.somee.com/Categorias")
         .then(response => response.json())
         .then(json => {
             console.log(json);
@@ -73,7 +73,7 @@ function eliminarCateg(id) {
     let opcion = confirm("¿Desea realmente eliminar este elemento?")
     if (opcion) {
         alert("Eliminado correctamente!")
-        fetch(`https://localhost:7149/Categorias/${id}`, {
+        fetch(`https://crearapicamilo.somee.com/Categorias/${id}`, {
             method: 'DELETE'
           })
           .then(() => {

@@ -2,7 +2,7 @@ const id = localStorage.getItem("idEditar");
 let producto = {}; 
 
 
-fetch(`https://localhost:7149/Categorias/${id}`)
+fetch(`https://crearapicamilo.somee.com/Categorias/${id}`)
     .then(response => response.json())
     .then(json => {
         
@@ -24,7 +24,7 @@ fetch(`https://localhost:7149/Categorias/${id}`)
         nombre: categNombre,
       };
     
-      fetch(`https://localhost:7149/Categorias/${id}`, {
+      fetch(`https://crearapicamilo.somee.com/Categorias/${id}`, {
         method: 'PUT',
         headers: {
           'Accept': 'application/json',

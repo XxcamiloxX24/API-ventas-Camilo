@@ -1,15 +1,18 @@
 #body{
-    background-color: black;
+    background-color: rgb(168, 168, 168);
 }
 #titulo{
-    text-shadow: 0px 0px 10px rgb(17, 0, 255);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 #allProd {
+    color: black;
+    border-radius: 20px;
     box-shadow: 3px 1px 5px 10px #ffffff60;
-    padding: 30px 30%;
-    background-color: rgba(255, 255, 255, 0.199);
-    width: 100%; /* Asegura que el contenedor ocupe el espacio disponible */
+    padding: 20px 10%;
+    background-color: rgb(255, 255, 255);
+    width: 50%; /* Asegura que el contenedor ocupe el espacio disponible */
 }
+
 
 #prod {
     background-color: rgb(243, 239, 175);

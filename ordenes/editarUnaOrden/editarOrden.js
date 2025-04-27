@@ -18,10 +18,10 @@ fetch(`https://crearapicamilo.somee.com/ordenes/${id}`)
           });
           console.log(clientes);
           document.getElementById("formularioEditar").innerHTML = `
-              <label for="add-descripcion" class="text-center text-white">Descripcion: </label>
+              <label for="add-descripcion" class="text-center">Descripcion: </label>
                       <textarea type="text" class="form-control" id="add-descripcion" placeholder="Descripcion de la orden">${orden.descripcionOrden}</textarea>
                   <br>
-                  <label for="add-selectEstado" class="text-center text-white">Estado:</label>
+                  <label for="add-selectEstado" class="text-center">Estado:</label>
                   <select id="add-selectEstado" class="form-control">
                       <option value="Facturación" ${orden.estadoOrden == "Facturación" ? "selected" : ""} >Facturación</option>
                       <option value="Preparación" ${orden.estadoOrden == "Preparación" ? "selected" : ""} >Preparación</option>
@@ -30,11 +30,11 @@ fetch(`https://crearapicamilo.somee.com/ordenes/${id}`)
                       <option value="Cancelación" ${orden.estadoOrden == "Cancelación" ? "selected" : ""} >Cancelación</option>
                   </select>
                   <br>
-                  <label for="add-total" class="text-center text-white">Total: </label>
+                  <label for="add-total" class="text-center">Total: </label>
                       <input type="text" class="form-control" id="add-total" placeholder="Total de la orden" value="${orden.totalOrden}">
                   <br>
   
-                  <label for="add-cliente" class="text-center text-white">Cliente: </label>
+                  <label for="add-cliente" class="text-center">Cliente: </label>
                       <select id="add-cliente" class="form-control">
                           ${opciones}
                       </select>

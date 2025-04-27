@@ -54,9 +54,9 @@ function getItems() {
                     elemento.estadoOrden,
                     elemento.cliente.nombreCliente,
                     elemento.totalOrden,
-                    `<button class="btn btn-outline-primary" onclick="verDetalle(${elemento.idOrden})">Ver</button>`,
-                    `<button class="btn btn-warning" onclick="editarOrden(${elemento.idOrden})">Editar</button>
-                     <button class="btn btn-danger"  onclick="eliminarOrden(${elemento.idOrden})">Eliminar</button>`
+                    `<button class="btn btn-outline-primary" onclick="verDetalle(${elemento.idOrden})"><i class="bi bi-arrow-down-left-square"></i></button>`,
+                    `<button class="btn btn-warning" onclick="editarOrden(${elemento.idOrden})"><i class="bi bi-pencil-square"></i></button>
+                     <button class="btn btn-danger"  onclick="eliminarOrden(${elemento.idOrden})"><i class="bi bi-trash3-fill"></i></button>`
                 ]);
             });
 

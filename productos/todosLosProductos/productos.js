@@ -50,8 +50,8 @@ function getItems() {
                     elemento.nombre,
                     elemento.precio,
                     elemento.categoria.nombre,
-                    `<button class="btn btn-warning" onclick="editarProd(${elemento.idProducto})">Editar</button>
-                     <button class="btn btn-danger"  onclick="eliminarProd(${elemento.idProducto})">Eliminar</button>`
+                    `<button class="btn btn-warning" onclick="editarProd(${elemento.idProducto})"><i class="bi bi-pencil-square"></i></button>
+                     <button class="btn btn-danger"  onclick="eliminarProd(${elemento.idProducto})"><i class="bi bi-trash3-fill"></i></button>`
                 ]);
             });
 

@@ -8,16 +8,16 @@ fetch(`https://crearapicamilo.somee.com/clientes/${id}`)
         
         console.log(json);
         document.getElementById("formularioEditar").innerHTML = `
-            <label for="add-nombre" class="text-center text-white">Nombre: </label>
+            <label for="add-nombre" class="text-center">Nombre: </label>
             <input type="text" class="form-control" id="add-nombre" placeholder="Nombre del cliente" value="${json.nombreCliente}">
             <br>
-            <label for="add-apellido" class="text-center text-white">Apellido: </label>
+            <label for="add-apellido" class="text-center">Apellido: </label>
             <input type="text" class="form-control" id="add-apellido" placeholder="Apellido del cliente" value="${json.apellidoCLiente}">
             <br>
-            <label for="add-correo" class="text-center text-white">Correo: </label>
+            <label for="add-correo" class="text-center">Correo: </label>
             <input type="text" class="form-control" id="add-correo" placeholder="Correo del Cliente" value="${json.correoCLiente}">
             <br>
-            <label for="add-direccion" class="text-center text-white">Direccion: </label>
+            <label for="add-direccion" class="text-center">Direccion: </label>
             <input type="text" class="form-control" id="add-direccion" placeholder="Direccion del cliente" value="${json.direccionCliente}">
             <br>
             <input type="submit" class="btn btn-success" value="Guardar Cambios" onclick="editarCliente()">

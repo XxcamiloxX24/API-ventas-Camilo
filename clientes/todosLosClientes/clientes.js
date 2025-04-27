@@ -53,8 +53,8 @@ function getItems() {
                     elemento.apellidoCLiente,
                     elemento.correoCLiente,
                     elemento.direccionCliente,
-                    `<button class="btn btn-warning" onclick="editarCliente(${elemento.idCliente})">Editar</button>
-                     <button class="btn btn-danger"  onclick="eliminarCliente(${elemento.idCategoria})">Eliminar</button>`
+                    `<button class="btn btn-warning" onclick="editarCliente(${elemento.idCliente})"><i class="bi bi-pencil-square"></i></button>
+                     <button class="btn btn-danger"  onclick="eliminarCliente(${elemento.idCategoria})"><i class="bi bi-trash3-fill"></i></button>`
                 ]);
             });
 

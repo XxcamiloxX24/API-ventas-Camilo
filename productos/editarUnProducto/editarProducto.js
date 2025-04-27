@@ -16,13 +16,13 @@ fetch(`https://crearapicamilo.somee.com/Productos/${id}`)
         });
 
         document.getElementById("formularioEditar").innerHTML = `
-            <label for="add-nombre" class="text-center text-white">Nombre: </label>
+            <label for="add-nombre" class="text-center">Nombre: </label>
             <input type="text" class="form-control" id="add-nombre" placeholder="Nombre del producto" value="${producto.nombre}">
             <br>
-            <label for="add-precio" class="text-center text-white">Precio: </label>
+            <label for="add-precio" class="text-center">Precio: </label>
             <input type="text" class="form-control" id="add-precio" placeholder="Precio del producto" value="${producto.precio}">
             <br>
-            <label for="categSelect" class="text-center text-white">Categoria: </label>
+            <label for="categSelect" class="text-center">Categoria: </label>
             <select class="form-control" id="categSelect">${opciones}</select>
             <br>
             <input type="submit" class="btn btn-success" value="Guardar Cambios" onclick="editarProducto()">

@@ -78,10 +78,10 @@ function eliminarProd(id) {
           })
           .then(() => {
               document.getElementById("allProd").innerHTML = "";
-              getItems()})
+              location.reload();})
           .catch(error => console.error('Unable to delete item.', error));
     } else {
-        getItems();
+        location.reload();
     }
      
 }

@@ -30,12 +30,12 @@ fetch(`https://crearapicamilo.somee.com/DetalleOrdens/detalle/${idDetalle}`)
         });
 
         document.getElementById("formularioEditar").innerHTML = `
-            <label for="seleccionProducto" class="text-center text-white">Producto: </label>
+            <label for="seleccionProducto" class="text-center">Producto: </label>
               <select class="form-control" id="seleccionProducto">
                 ${opcionesProductos}
               </select>
             <br>
-            <label for="add-cantidad" class="text-center text-white">Cantidad de productos: </label>
+            <label for="add-cantidad" class="text-center">Cantidad de productos: </label>
               <input type="text" class="form-control" id="add-cantidad" placeholder="Cantidad de productos" value="${detalle.cantidad}">
             <br>
             <input type="submit" class="btn btn-success" value="Guardar Cambios" onclick="editarDetalle()">

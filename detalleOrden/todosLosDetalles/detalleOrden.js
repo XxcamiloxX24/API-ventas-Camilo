@@ -39,7 +39,7 @@ $(document).ready(function () {
 });
 
 function getItems() {
-    fetch(`https://crearapicamilo.somee.com//DetalleOrdens/orden/${id}`)
+    fetch(`https://crearapicamilo.somee.com/DetalleOrdens/orden/${id}`)
         .then(response => response.json())
         .then(json => {
             console.log(json);
@@ -54,8 +54,8 @@ function getItems() {
                     elemento.producto.precio,
                     elemento.cantidad,
                     elemento.producto.precio * elemento.cantidad,
-                    `<button class="btn btn-warning" onclick="editarDetalle(${elemento.idDetalle})">Editar</button>
-                     <button class="btn btn-danger"  onclick="eliminarDetal(${elemento.idDetalle})">Eliminar</button>`
+                    `<button class="btn btn-warning" onclick="editarDetalle(${elemento.idDetalle})"><i class="bi bi-pencil-square"></i></button>
+                     <button class="btn btn-danger"  onclick="eliminarDetal(${elemento.idDetalle})"><i class="bi bi-trash3-fill"></i></button>`
                 ]);
             });
 

@@ -8,7 +8,7 @@ fetch(`https://crearapicamilo.somee.com/Categorias/${id}`)
         
         console.log(json);
         document.getElementById("formularioEditar").innerHTML = `
-            <label for="categSelect" class="text-center text-white">Categoria: </label>
+            <label for="categSelect" class="text-center">Categoria: </label>
             <input type="text" class="form-control" placeholder="Nombre de la categoria" id="categNombre" value="${json.nombre}">
             <br>
             <input type="submit" class="btn btn-success" value="Guardar Cambios" onclick="editarCategoria()">

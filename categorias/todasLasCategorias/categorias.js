@@ -50,8 +50,8 @@ function getItems() {
                 productTable.row.add([
                     elemento.idCategoria,
                     elemento.nombre,
-                    `<button class="btn btn-warning" onclick="editarCateg(${elemento.idCategoria})">Editar</button>
-                     <button class="btn btn-danger"  onclick="eliminarCateg(${elemento.idCategoria})">Eliminar</button>`
+                    `<button class="btn btn-warning" onclick="editarCateg(${elemento.idCategoria})"><i class="bi bi-pencil-square"></i></button>
+                     <button class="btn btn-danger"  onclick="eliminarCateg(${elemento.idCategoria})"><i class="bi bi-trash3-fill"></i></button>`
                 ]);
             });
 

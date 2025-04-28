@@ -72,12 +72,12 @@ function editarProd(id){
 function eliminarProd(id) {
     let opcion = confirm("¿Desea realmente eliminar este elemento?")
     if (opcion) {
-        alert("Eliminado correctamente!")
+        
         fetch(`https://crearapicamilo.somee.com/Productos/${id}`, {
             method: 'DELETE'
           })
           .then(() => {
-              document.getElementById("allProd").innerHTML = "";
+              alert("Eliminado correctamente!")
               location.reload();})
           .catch(error => console.error('Unable to delete item.', error));
     } else {
